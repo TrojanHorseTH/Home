@@ -1,0 +1,77 @@
+/* Reset defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #0f1115;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.top-bar {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#time {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+#date {
+  font-size: 1.2em;
+  color: #aaaaaa;
+}
+
+.card {
+  background: #1c1f26;
+  width: 90%;
+  max-width: 500px;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+#routine-list li {
+  font-size: 1.2em;
+  padding: 10px 0;
+  border-bottom: 1px solid #333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#routine-list li.done {
+  text-decoration: line-through;
+  color: #4da3ff;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: #4da3ff;
+  color: white;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #3a82c4;
+}
