@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wall Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Clock -->
+  <div class="top-bar">
+    <div id="time">07:30</div>
+    <div id="date">Monday, March 5</div>
+  </div>
+
+  <!-- Weather Card -->
+  <div class="card" id="weather-card">
+    <h2>Weather</h2>
+    <p id="weather">12°C Cloudy</p>
+  </div>
+
+  <!-- Morning Routine Card -->
+  <div class="card" id="routine-card">
+    <h2>Morning Routine</h2>
+    <ul id="routine-list">
+      <!-- Tasks will be populated by JS -->
+    </ul>
+  </div>
+
+  <!-- Footer / Optional Controls -->
+  <div class="footer">
+    <button id="reset-tasks">Reset Routine</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
