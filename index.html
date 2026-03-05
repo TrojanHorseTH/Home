@@ -6,7 +6,15 @@
   <title>Wall Assistant</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark-mode">
+
+  <!-- Theme Toggle -->
+  <div class="theme-toggle">
+    <label>
+      <input type="checkbox" id="theme-switch">
+      Light Mode
+    </label>
+  </div>
 
   <!-- Top Clock -->
   <div class="top-bar">
@@ -17,18 +25,20 @@
   <!-- Weather Card -->
   <div class="card" id="weather-card">
     <h2>Weather</h2>
-    <p id="weather">12°C Cloudy</p>
+    <p id="weather">Loading...</p>
   </div>
 
   <!-- Morning Routine Card -->
   <div class="card" id="routine-card">
     <h2>Morning Routine</h2>
-    <ul id="routine-list">
-      <!-- Tasks will be populated by JS -->
-    </ul>
+    <ul id="routine-list"></ul>
+    <div class="task-controls">
+      <input type="text" id="new-task" placeholder="Add new task">
+      <button id="add-task">Add</button>
+    </div>
   </div>
 
-  <!-- Footer / Optional Controls -->
+  <!-- Footer -->
   <div class="footer">
     <button id="reset-tasks">Reset Routine</button>
   </div>
